@@ -1,0 +1,57 @@
+[case]
+case_dir = "${JOB_CASE_DIR}"
+sources_file = "sources.local.toml"
+jobs_file = "jobs.jsonl"
+matches_file = "job-matches.csv"
+tracker_file = "application-tracker.csv"
+snapshots_dir = "raw/job-posts/snapshots"
+extracted_dir = "raw/job-posts/extracted"
+drafts_dir = "application-drafts"
+runs_dir = "agent-runs"
+
+[source_policy]
+timeout_seconds = 20
+max_download_bytes = 2000000
+
+[identity]
+name = "姓名"
+school = "学校"
+major = "专业"
+grade = "年级"
+availability = "到岗时间"
+
+[preferences]
+cities = ["北京", "上海", "深圳"]
+target_roles = ["行业研究实习"]
+available_days_per_week = 0
+internship_months = 0
+
+[matching]
+preparation_threshold = 70
+
+[resume]
+soffice_command = "soffice"
+
+[email]
+default_body = """
+尊敬的招聘负责人：
+
+您好！我希望申请公司的岗位。附件为按招聘要求准备的个人简历，烦请查收。
+
+感谢您的时间与考虑。
+
+姓名
+"""
+
+[risk]
+terms = ["交钱培训", "先贷款", "包就业", "无经验高薪"]
+
+[[roles]]
+name = "行业研究实习"
+keywords = ["行业研究", "产业研究", "公司研究", "数据分析", "政策研究", "财务分析"]
+evidence_ids = ["E01", "E02"]
+base_docx = "resume-versions/base.docx"
+
+[[roles.groups]]
+paragraph_indices = [11, 12]
+evidence_ids = ["E01", "E02"]

@@ -1,0 +1,15 @@
+[[sources]]
+id = "saved-job-post"
+type = "file"
+name = "手工保存的招聘信息"
+value = "incoming/job-post.txt"
+enabled = true
+tags = ["行业研究"]
+
+[[sources]]
+id = "public-web-page"
+type = "url"
+name = "公开招聘网页"
+value = "https://example.com/internship"
+enabled = false
+tags = ["示例"]
