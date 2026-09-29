@@ -20,6 +20,9 @@
 可以在agent中提交你的JD，可以但不限于使用复制等方式，还可以通过定时任务抓取公众号网站等信息进行自动投递（我做了尝试，还没有实现完全自动化，后续将持续跟进）
 <img width="1958" height="1752" alt="浮引截屏_2026-09-29_14-34-15" src="https://github.com/user-attachments/assets/7c343503-85c9-4318-834d-ec1c8f8fcff8" />
 
+这个时间不是很长，例如这个几分钟也可以完成，整体效率较高。
+<img width="1899" height="1789" alt="image" src="https://github.com/user-attachments/assets/c22d4a81-fd96-4c22-8e54-0ad1ed8f7aca" />
+
 agent会结合你的JD信息，改写简历，并且编写邮件并且投递，经过你的同意后发送邮件。
 <img width="1960" height="1718" alt="浮引截屏_2026-09-29_14-36-24" src="https://github.com/user-attachments/assets/5a2ace8e-08ad-4403-adaa-7b3462181866" />
 
